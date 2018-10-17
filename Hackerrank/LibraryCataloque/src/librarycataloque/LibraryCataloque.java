@@ -34,8 +34,8 @@ public class LibraryCataloque {
     public Map<String, Book> getBookCollection() {
         return this.bookCollection;
     }
-    
-    public Book getBook(String bookTitle){
+
+    public Book getBook(String bookTitle) {
         return getBookCollection().get(bookTitle);
     }
 
@@ -50,34 +50,56 @@ public class LibraryCataloque {
     public double getFeePerLateDay() {
         return this.feePerLateDay;
     }
-    
+
     //setters
-    public void nextDay(){
+    public void nextDay() {
         currentDay++;
     }
-    
-    public void setDay(int day){
-        currentDay=day;   
-    } 
-    
+
+    public void setDay(int day) {
+        currentDay = day;
+    }
+
     //INSTANCE METHODS
-    public void checkOut(String title){
-        Book book=getBook(title); 
-        if(book.isCheckedOut){
-           SorryBookAlreadyCheckedOut(book);
-        }
-        else{
+    public void checkOut(String title) {
+        Book book = getBook(title);
+        if (book.isCheckedOut) {
+            SorryBookAlreadyCheckedOut(book);
+        } else {
             book.setIsCheckedOut(true, currentDay);
-            System.out.println("You just checked out"+title
-                    +"it's due on"+(getCurrentDay()+getLengthOfCheckOutPeriod())+".");
+            System.out.println("You just checked out" + title
+                    + "it's due on day " + (getCurrentDay() + getLengthOfCheckOutPeriod()) + ".");
         }
     }
-    public void returnBook(){
+
+    public void returnBook(String title) {
+        Book book = getBook(title);
+        int daysLate = currentDay - ((book.getDayCheckedOut() + getLengthOfCheckOutPeriod()));
+        if (daysLate > 0) {
+            System.out.println("You owe the Library $" + (getInitialLateFee() + daysLate * getFeePerLateDay())
+                    + "because your book is " + daysLate + " days overdue. ");
+        } else {
+            System.out.println("Book returned .Thank you");
+        }
+        book.setIsCheckedOut(false, -1);
     }
-    public void SorryBookAlreadyCheckedOut(Book book){
+
+    public void SorryBookAlreadyCheckedOut(Book book) {
+        System.out.println("Sorry, " + book.getTitle() + " is alraedy "
+                + "checked out .It should be back on day " + (book.getDayCheckedOut() + getLengthOfCheckOutPeriod()) + ".");
     }
 
     public static void main(String[] args) {
+        Map<String, Book> bookCollection = new HashMap<>();
+        Book harry = new Book("Harry Potter", 732, 7298);
+        bookCollection.put("Harry Porter", harry);
+        LibraryCataloque lib = new LibraryCataloque(bookCollection);
+        lib.checkOut("Harry Porter");
+        lib.nextDay();
+        lib.nextDay();
+         lib.checkOut("Harry Porter");
+         lib.setDay(17);
+        lib.returnBook("Harry Porter");
 
     }
 
