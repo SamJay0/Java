@@ -77,7 +77,7 @@ public class LibraryCataloque {
         int daysLate = currentDay - ((book.getDayCheckedOut() + getLengthOfCheckOutPeriod()));
         if (daysLate > 0) {
             System.out.println("You owe the Library $" + (getInitialLateFee() + daysLate * getFeePerLateDay())
-                    + "because your book is " + daysLate + " days overdue. ");
+                    + " because your book is " + daysLate + " days overdue. ");
         } else {
             System.out.println("Book returned .Thank you");
         }
@@ -94,12 +94,7 @@ public class LibraryCataloque {
         Book harry = new Book("Harry Potter", 732, 7298);
         bookCollection.put("Harry Porter", harry);
         LibraryCataloque lib = new LibraryCataloque(bookCollection);
-        lib.checkOut("Harry Porter");
-        lib.nextDay();
-        lib.nextDay();
-         lib.checkOut("Harry Porter");
-         lib.setDay(17);
-        lib.returnBook("Harry Porter");
+        System.out.println(lib.getBook("Harry Porter").getPageCount());
 
     }
 

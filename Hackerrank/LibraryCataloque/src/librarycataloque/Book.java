@@ -52,6 +52,8 @@ public class Book {
     private void setDayCheckedOut(int day){
         this.dayCheckedOut=day;
     }
+    public void setNew(){
+    }
             
 
 }
