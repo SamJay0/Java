@@ -5,30 +5,30 @@ import java.util.Stack;
 
 /**
  * @author SamJay
+ * @param <D>
  */
-public class Queuey {
+public class Queuey<D> {
     //create queue using linkedlist
 
-    LinkedList queue;
+    LinkedList<D> queue;
 
     public Queuey() {
         this.queue = new LinkedList();
     }
 
     //enqueue
-    public void enqueue(int x) {
+    public void enqueue(D x) {
         queue.addLast(x);
     }
 
     //dequeue
-    public int dequeue() {
-        //casting
-        return (int) queue.remove();
+    public D dequeue() {
+        return  queue.remove();
     }
 
     //peek
-    public int peek() {
-        return (int) queue.get(0);
+    public D peek() {
+        return  queue.get(0);
     }
 
     //size
@@ -56,15 +56,15 @@ public class Queuey {
         //throe exception if not palindrome
     }
     public static void main(String[] args) {
-//        Queuey numberQueue = new Queuey();
-//        numberQueue.enqueue(5);
-//        numberQueue.enqueue(7);
-//        numberQueue.enqueue(9);
-//        numberQueue.printQueue();
-//        System.out.println("\n"+numberQueue.dequeue());
-//        System.out.println(numberQueue.peek());
-//        System.out.println(numberQueue.dequeue());
-//        System.out.println(numberQueue.dequeue());
+        Queuey numberQueue = new Queuey();
+        numberQueue.enqueue(5);
+        numberQueue.enqueue(7);
+        numberQueue.enqueue(9);
+        numberQueue.printQueue();
+        System.out.println("\n"+numberQueue.dequeue());
+        System.out.println(numberQueue.peek());
+        System.out.println(numberQueue.dequeue());
+        System.out.println(numberQueue.dequeue());
         Stack<String> stacky = new Stack<>();
         stacky.push("hello");
         stacky.push("there");

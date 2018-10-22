@@ -15,6 +15,10 @@ public class ArrayPractice {
             }
         }
         System.out.print(" }\n");
+        //enhance for loop
+        for(E item: arr){
+            System.out.print(item +", ");
+        }
 
     }
     
