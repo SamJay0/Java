@@ -65,6 +65,7 @@ public class Queuey<D> {
         System.out.println(numberQueue.peek());
         System.out.println(numberQueue.dequeue());
         System.out.println(numberQueue.dequeue());
+        //stack
         Stack<String> stacky = new Stack<>();
         stacky.push("hello");
         stacky.push("there");
