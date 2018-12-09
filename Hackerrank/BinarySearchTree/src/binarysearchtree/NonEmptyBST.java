@@ -2,7 +2,7 @@ package binarysearchtree;
 /**
  * @author SamJay
  */
-class NonEmptyBST<D extends Comparable> implements Tree<D> {
+public class NonEmptyBST<D extends Comparable> implements Tree<D> {
     D data;
     Tree left;
     Tree right;
@@ -16,5 +16,15 @@ class NonEmptyBST<D extends Comparable> implements Tree<D> {
     }
     public int cardinality(){
         return 1+left.cardinality();
+    }
+
+    @Override
+    public boolean member(D elt) {
+        return false;
+    }
+
+    @Override
+    public NonEmptyBST<D> add() {
+        return null;
     }
 }
