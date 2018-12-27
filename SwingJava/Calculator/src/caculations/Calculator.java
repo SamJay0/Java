@@ -5,8 +5,6 @@
  */
 package caculations;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author samjay
@@ -15,7 +13,7 @@ public class Calculator extends javax.swing.JFrame {
 
     double num1;
     double num2;
-    double result ;
+    double result;
     char operator;
     int txtSize;
     boolean isOperationclicked = true;
@@ -60,8 +58,14 @@ public class Calculator extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        txtDisplay.setEditable(false);
         txtDisplay.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtDisplay.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtDisplay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDisplayActionPerformed(evt);
+            }
+        });
 
         Btn1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         Btn1.setText("1");
@@ -306,13 +310,15 @@ public class Calculator extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
    //check text in Display
 
+    private boolean isLastcharAnOperation(String str) {
+        return str.charAt(str.length() - 1) == '+' || str.charAt(str.length() - 1) == '-' || str.charAt(str.length() - 1) == 'x' || str.charAt(str.length() - 1) == '/';
+    }
+
     private boolean isOperation() {
         return txtDisplay.getText().equals("+") || txtDisplay.getText().equals("-") || txtDisplay.getText().equals("/") || txtDisplay.getText().equals("x");
     }
     private void Btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn6ActionPerformed
-        if (isOperation()) {
-            txtDisplay.setText("");
-        }
+
         txtDisplay.setText(txtDisplay.getText() + Btn6.getText());
     }//GEN-LAST:event_Btn6ActionPerformed
 
@@ -321,51 +327,37 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_clearBtnActionPerformed
 
     private void Btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn1ActionPerformed
-        if (isOperation()) {
-            txtDisplay.setText("");
-        }
+
         txtDisplay.setText(txtDisplay.getText() + Btn1.getText());
     }//GEN-LAST:event_Btn1ActionPerformed
 
     private void Btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn2ActionPerformed
-        if (isOperation()) {
-            txtDisplay.setText("");
-        }
+
         txtDisplay.setText(txtDisplay.getText() + Btn2.getText());
     }//GEN-LAST:event_Btn2ActionPerformed
 
     private void Btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn3ActionPerformed
-        if (isOperation()) {
-            txtDisplay.setText("");
-        }
+
         txtDisplay.setText(txtDisplay.getText() + Btn3.getText());
     }//GEN-LAST:event_Btn3ActionPerformed
 
     private void Btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn4ActionPerformed
-        if (isOperation()) {
-            txtDisplay.setText("");
-        }
+
         txtDisplay.setText(txtDisplay.getText() + Btn4.getText());
     }//GEN-LAST:event_Btn4ActionPerformed
 
     private void Btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn5ActionPerformed
-        if (isOperation()) {
-            txtDisplay.setText("");
-        }
+
         txtDisplay.setText(txtDisplay.getText() + Btn5.getText());
     }//GEN-LAST:event_Btn5ActionPerformed
 
     private void Btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn7ActionPerformed
-        if (isOperation()) {
-            txtDisplay.setText("");
-        }
+
         txtDisplay.setText(txtDisplay.getText() + Btn7.getText());
     }//GEN-LAST:event_Btn7ActionPerformed
 
     private void Btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn8ActionPerformed
-        if (isOperation()) {
-            txtDisplay.setText("");
-        }
+
         txtDisplay.setText(txtDisplay.getText() + Btn8.getText());
     }//GEN-LAST:event_Btn8ActionPerformed
 
@@ -377,21 +369,19 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_Btn9ActionPerformed
 
     private void Btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn0ActionPerformed
-        if (isOperation()) {
-            txtDisplay.setText("");
-        }
+
         txtDisplay.setText(txtDisplay.getText() + Btn0.getText());
     }//GEN-LAST:event_Btn0ActionPerformed
 
     private void plusBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusBtnActionPerformed
         try {
-            
+
 //            while (buttonClicked) {
-                num1 = Double.parseDouble(txtDisplay.getText());
-                txtSize=txtDisplay.getText().length();
+            num1 = Double.parseDouble(txtDisplay.getText());
+            txtSize = txtDisplay.getText().length();
 //                result += num1;
-                txtDisplay.setText(txtDisplay.getText()+"+");
-                operator = '+';
+            txtDisplay.setText(txtDisplay.getText() + "+");
+            operator = '+';
 //                buttonClicked = txtDisplay.getText().equals("+");
 //            }
             isOperationclicked = true;
@@ -404,8 +394,8 @@ public class Calculator extends javax.swing.JFrame {
     private void minusBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusBtnActionPerformed
         try {
             num1 = Double.parseDouble(txtDisplay.getText());
-            txtSize=txtDisplay.getText().length();
-            txtDisplay.setText(txtDisplay.getText()+"-");
+            txtSize = txtDisplay.getText().length();
+            txtDisplay.setText(txtDisplay.getText() + "-");
             operator = '-';
             isOperationclicked = true;
         } catch (NumberFormatException e) {
@@ -416,8 +406,8 @@ public class Calculator extends javax.swing.JFrame {
     private void divisionBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisionBtnActionPerformed
         try {
             num1 = Double.parseDouble(txtDisplay.getText());
-            txtSize=txtDisplay.getText().length();
-            txtDisplay.setText(txtDisplay.getText()+"/");
+            txtSize = txtDisplay.getText().length();
+            txtDisplay.setText(txtDisplay.getText() + "/");
             operator = '/';
             isOperationclicked = true;
         } catch (NumberFormatException e) {
@@ -428,8 +418,8 @@ public class Calculator extends javax.swing.JFrame {
     private void productBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productBtnActionPerformed
         try {
             num1 = Double.parseDouble(txtDisplay.getText());
-            txtSize=txtDisplay.getText().length();
-            txtDisplay.setText(txtDisplay.getText()+"x");
+            txtSize = txtDisplay.getText().length();
+            txtDisplay.setText(txtDisplay.getText() + "x");
             operator = 'x';
             isOperationclicked = true;
         } catch (NumberFormatException e) {
@@ -449,38 +439,42 @@ public class Calculator extends javax.swing.JFrame {
     private void equalsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equalsBtnActionPerformed
         try {
             while (isOperationclicked) {
-               String s=txtDisplay.getText();
-              
-                num2 = Double.parseDouble( s.substring(txtSize+1, s.length()));
-                switch (operator) {
-                    case '+':
-                        result = num1+num2;
-                        txtDisplay.setText("" + result);
-                        isOperationclicked = false;
+                String s = txtDisplay.getText();
+                if (s.length() <= txtSize) {
+                    result = num1;
+                    txtDisplay.setText("" + result);
+                } else {
+                    num2 = Double.parseDouble(s.substring(txtSize + 1, s.length()));
+                    switch (operator) {
+                        case '+':
+                            result = num1 + num2;
+                            txtDisplay.setText("" + result);
+                            isOperationclicked = false;
 //                        buttonClicked=false;
 
-                        break;
-                    case '-':
-                        result = num1 - num2;
-                        txtDisplay.setText("" + result);
-                        isOperationclicked = false;
-                        break;
-                    case 'x':
-                        result = num1 * num2;
-                        txtDisplay.setText("" + result);
-                        isOperationclicked = false;
-                        break;
-                    case '/':
-                        result = num1 / num2;
-                        txtDisplay.setText("" + result);
-                        isOperationclicked = false;
-                        break;
-                    default:
-                        txtDisplay.setText(txtDisplay.getText());
-                        isOperationclicked = false;
-                        break;
-                }
+                            break;
+                        case '-':
+                            result = num1 - num2;
+                            txtDisplay.setText("" + result);
+                            isOperationclicked = false;
+                            break;
+                        case 'x':
+                            result = num1 * num2;
+                            txtDisplay.setText("" + result);
+                            isOperationclicked = false;
+                            break;
+                        case '/':
+                            result = num1 / num2;
+                            txtDisplay.setText("" + result);
+                            isOperationclicked = false;
+                            break;
+                        default:
+                            txtDisplay.setText(txtDisplay.getText());
+                            isOperationclicked = false;
+                            break;
+                    }
 
+                }
             }
         } catch (NumberFormatException e) {
         }
@@ -497,16 +491,19 @@ public class Calculator extends javax.swing.JFrame {
     private void deleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBtnActionPerformed
         try {
             String s = txtDisplay.getText();
+//            if (isLastcharAnOperation(s)) {
+//                operator = ' ';
+//            }
             String substring = s.substring(0, s.length() - 1);
             txtDisplay.setText(substring);
-            isOperationclicked = false;
-            if (isOperation()) {
-                operator = txtDisplay.getText().charAt(0);
-            }
 
         } catch (Exception e) {
         }
     }//GEN-LAST:event_deleteBtnActionPerformed
+
+    private void txtDisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDisplayActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDisplayActionPerformed
 
     /**
      * @param args the command line arguments
