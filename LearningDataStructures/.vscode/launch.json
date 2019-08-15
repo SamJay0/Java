@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ReverseOutput",
+            "request": "launch",
+            "mainClass": "ReverseOutput"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ScannerClass",
             "request": "launch",
             "mainClass": "ScannerClass"
