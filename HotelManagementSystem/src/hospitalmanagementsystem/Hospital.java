@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*                  ___________________
                        @JayDevelopers'
                     ----------------------------------  */
@@ -10,13 +11,25 @@ import java.awt.print.PrinterException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package hospitalmanagementsystem;
+
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 /**
  *
  * @author samjay
  */
 public class Hospital extends javax.swing.JFrame {
+<<<<<<< HEAD
     
     private JFrame frame;
+=======
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
     /**
      * Creates new form Hotel
@@ -36,7 +49,11 @@ public class Hospital extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
+<<<<<<< HEAD
         displayField = new javax.swing.JTextArea();
+=======
+        jTextArea1 = new javax.swing.JTextArea();
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
@@ -46,6 +63,7 @@ public class Hospital extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
+<<<<<<< HEAD
         patientBtn = new javax.swing.JButton();
         updateBtn = new javax.swing.JButton();
         deleteBtn = new javax.swing.JButton();
@@ -58,6 +76,20 @@ public class Hospital extends javax.swing.JFrame {
         resetBtn = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         nameOfTabletComboBox = new javax.swing.JComboBox<>();
+=======
+        jButton6 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -75,6 +107,7 @@ public class Hospital extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
+<<<<<<< HEAD
         issuedDateField = new javax.swing.JTextField();
         sideEffectsField = new javax.swing.JTextField();
         dailyDoseField = new javax.swing.JTextField();
@@ -96,12 +129,36 @@ public class Hospital extends javax.swing.JFrame {
         tableDetails = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+=======
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jTextField9 = new javax.swing.JTextField();
+        jTextField10 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
+        jTextField13 = new javax.swing.JTextField();
+        jTextField14 = new javax.swing.JTextField();
+        jTextField15 = new javax.swing.JTextField();
+        jTextField16 = new javax.swing.JTextField();
+        jTextField17 = new javax.swing.JTextField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1200, 800));
+        setPreferredSize(new java.awt.Dimension(1200, 800));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+<<<<<<< HEAD
         displayField.setEditable(false);
         displayField.setBackground(new java.awt.Color(255, 255, 255));
         displayField.setColumns(20);
@@ -111,6 +168,17 @@ public class Hospital extends javax.swing.JFrame {
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 340, 480));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 90, 360, 490));
+=======
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(255, 255, 255));
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 440, 490));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 100, 460, 510));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -118,9 +186,15 @@ public class Hospital extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 60)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Hospital Management System");
+<<<<<<< HEAD
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 0, -1, -1));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1180, 80));
+=======
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, -1, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1380, 90));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jPanel6.setBackground(new java.awt.Color(0, 0, 0));
         jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -140,7 +214,11 @@ public class Hospital extends javax.swing.JFrame {
         jLabel2.setText("patient Prescription");
         jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, -1, -1));
 
+<<<<<<< HEAD
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 820, 60));
+=======
+        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 920, 60));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
@@ -154,6 +232,7 @@ public class Hospital extends javax.swing.JFrame {
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 1060, 90));
 
+<<<<<<< HEAD
         patientBtn.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         patientBtn.setForeground(new java.awt.Color(0, 0, 0));
         patientBtn.setText("Patient");
@@ -255,10 +334,114 @@ public class Hospital extends javax.swing.JFrame {
         jPanel3.add(resetBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 10, -1, -1));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 580, 1180, 50));
+=======
+        jButton6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(0, 0, 0));
+        jButton6.setText("Patient");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 20, -1, -1));
+
+        jButton11.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(0, 0, 0));
+        jButton11.setText("Update");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
+
+        jButton12.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton12.setForeground(new java.awt.Color(0, 0, 0));
+        jButton12.setText("Delete");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, -1, -1));
+
+        jButton13.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton13.setForeground(new java.awt.Color(0, 0, 0));
+        jButton13.setText("Doctor");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, -1, -1));
+
+        jButton15.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton15.setForeground(new java.awt.Color(0, 0, 0));
+        jButton15.setText("Gp Appointment");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 20, -1, -1));
+
+        jButton16.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton16.setForeground(new java.awt.Color(0, 0, 0));
+        jButton16.setText("Exit");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(1250, 20, -1, -1));
+
+        jButton17.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton17.setForeground(new java.awt.Color(0, 0, 0));
+        jButton17.setText("Print");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 20, -1, -1));
+
+        jButton18.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton18.setForeground(new java.awt.Color(0, 0, 0));
+        jButton18.setText("Login");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 20, -1, -1));
+
+        jButton19.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton19.setForeground(new java.awt.Color(0, 0, 0));
+        jButton19.setText("Prescription");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 20, -1, -1));
+
+        jButton20.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton20.setForeground(new java.awt.Color(0, 0, 0));
+        jButton20.setText("Reset");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 20, -1, -1));
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 610, 1380, 70));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Reference No.");
+<<<<<<< HEAD
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
 
         nameOfTabletComboBox.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -270,90 +453,169 @@ public class Hospital extends javax.swing.JFrame {
             }
         });
         getContentPane().add(nameOfTabletComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 200, -1));
+=======
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
+
+        jComboBox1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Make a selection", "Amoxilin", "Paracetamol", "Ibuprofen", "Co-Codamol", " " }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 200, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Name Of Tablets:");
+<<<<<<< HEAD
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
+=======
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Dose (mg):");
+<<<<<<< HEAD
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
+=======
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Number of Tablets:");
+<<<<<<< HEAD
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, -1));
+=======
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("LOT:");
+<<<<<<< HEAD
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
+=======
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Issued Date:");
+<<<<<<< HEAD
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, -1, -1));
+=======
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel9.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Exp Date:");
+<<<<<<< HEAD
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 450, -1, -1));
+=======
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel10.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("Possible Side Effects:");
+<<<<<<< HEAD
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 550, -1, -1));
+=======
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 580, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel11.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("Daily Dose:");
+<<<<<<< HEAD
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 500, -1, -1));
+=======
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel12.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("Further Infomation:");
+<<<<<<< HEAD
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, -1, -1));
+=======
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel13.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(0, 0, 0));
         jLabel13.setText("Storage Advice:");
+<<<<<<< HEAD
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 200, -1, -1));
+=======
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 230, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel14.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("Driving :");
+<<<<<<< HEAD
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 250, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("How to Use:");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 300, -1, -1));
+=======
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 280, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel15.setText("How to Use Medication:");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 330, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel16.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(0, 0, 0));
         jLabel16.setText("Patient ID:");
+<<<<<<< HEAD
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 350, -1, -1));
+=======
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 380, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel17.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(0, 0, 0));
         jLabel17.setText("NHIF No.");
+<<<<<<< HEAD
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 400, -1, -1));
+=======
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 430, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel18.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(0, 0, 0));
         jLabel18.setText("Patient Name:");
+<<<<<<< HEAD
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 450, -1, -1));
+=======
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 480, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel19.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(0, 0, 0));
         jLabel19.setText("Date Of Birth:");
+<<<<<<< HEAD
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 500, -1, -1));
+=======
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 530, -1, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         jLabel20.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(0, 0, 0));
         jLabel20.setText("Patient Address:");
+<<<<<<< HEAD
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 550, -1, -1));
 
         issuedDateField.setEditable(false);
@@ -452,10 +714,65 @@ public class Hospital extends javax.swing.JFrame {
         jScrollPane2.setViewportView(tableDetails);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 630, 1180, 90));
+=======
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 580, -1, -1));
+
+        jTextField1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 430, 200, -1));
+
+        jTextField2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 580, 200, -1));
+
+        jTextField3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 530, 200, -1));
+
+        jTextField4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 480, 200, -1));
+
+        jTextField5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 200, -1));
+
+        jTextField6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 200, -1));
+
+        jTextField7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 200, -1));
+
+        jTextField8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 380, 200, -1));
+
+        jTextField9.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 180, 200, -1));
+
+        jTextField10.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 230, 200, -1));
+
+        jTextField11.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 280, 200, -1));
+
+        jTextField12.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 330, 200, -1));
+
+        jTextField13.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 380, 200, -1));
+
+        jTextField14.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 430, 200, -1));
+
+        jTextField15.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 480, 200, -1));
+
+        jTextField16.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 580, 200, -1));
+
+        jTextField17.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        getContentPane().add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 530, 200, -1));
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
     private void nameOfTabletComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameOfTabletComboBoxActionPerformed
         if (nameOfTabletComboBox.getSelectedItem().equals("Ibuprofen")) {
             refNoField.setText("Ibu4784");
@@ -607,6 +924,51 @@ public class Hospital extends javax.swing.JFrame {
     private void patientNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientNameFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_patientNameFieldActionPerformed
+=======
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton20ActionPerformed
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
 
     /**
      * @param args the command line arguments
@@ -639,14 +1001,19 @@ public class Hospital extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+<<<<<<< HEAD
                 Hospital hp = new Hospital();
                 hp.setVisible(true);
                 hp.setLocationRelativeTo(null);
+=======
+                new Hospital().setVisible(true);
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
     private javax.swing.JTextField LOTField;
     private javax.swing.JButton LoginBtn;
     private javax.swing.JTextField NHIFNoField;
@@ -663,6 +1030,19 @@ public class Hospital extends javax.swing.JFrame {
     private javax.swing.JButton gpAppointmentBtn;
     private javax.swing.JTextField howToUseField;
     private javax.swing.JTextField issuedDateField;
+=======
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JComboBox<String> jComboBox1;
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -692,6 +1072,7 @@ public class Hospital extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
+<<<<<<< HEAD
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JComboBox<String> nameOfTabletComboBox;
     private javax.swing.JTextField numberOfTabletsField;
@@ -707,5 +1088,25 @@ public class Hospital extends javax.swing.JFrame {
     private javax.swing.JTextField storageAdviceField;
     private javax.swing.JTable tableDetails;
     private javax.swing.JButton updateBtn;
+=======
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
+>>>>>>> 1626815b8cf8a0b2233a297ede2442a06a5d9742
     // End of variables declaration//GEN-END:variables
 }
