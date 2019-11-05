@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Sale",
+            "request": "launch",
+            "mainClass": "inventory.datastructures.Sale"
+        }
+    ]
+}
