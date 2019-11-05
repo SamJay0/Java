@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Sol1",
+            "request": "launch",
+            "mainClass": "Sol1",
+            "projectName": "LongestWordInString_6528c69a"
+        }
+    ]
+}

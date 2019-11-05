@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution1",
+            "request": "launch",
+            "mainClass": "Challenges.LongestWordInString.Solution1",
+            "projectName": "LeetCode_33fa32a0"
+        }
+    ]
+}

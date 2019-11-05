@@ -1,0 +1,17 @@
+{
+    "files.exclude": {
+        "\"**/.classpath\": true": true,
+        "\"**/.DS_Store\": true": true,
+        "\"**/.git\" : true": true,
+        "\"**/.hg\": true": true,
+        "\"**/.project\": true": true,
+        "\"**/.settings\": true": true,
+        "\"**/.svn\": true": true,
+        "\"**/CVS\": true": true,
+        "**/.DS_Store": false,
+        "**/.git": false,
+        "**/.hg": false,
+        "**/.svn": false,
+        "**/CVS": false
+    }
+}
